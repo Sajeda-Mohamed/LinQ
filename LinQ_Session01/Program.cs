@@ -1,5 +1,8 @@
 ﻿using LinQ_Session01.Data;
 using static LinQ_Session01.Data.ListGenerators;
+using static LinQ_Session01.Data.Customer;
+using static LinQ_Session01.Data.Order;
+using static LinQ_Session01.Data.Product;
 using System.Linq;
 using LinQ_Session01.Data;
 namespace LinQ_Session01
@@ -31,6 +34,82 @@ namespace LinQ_Session01
             //             .Skip(1).FirstOrDefault();
             //Console.WriteLine(Result);
             #endregion
+
+            #region Aggregate Operators
+            #region 1
+            ///*1*/ int[] Arr = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+            //var Result = Arr.Count(N => N % 2 == 1); 
+            #endregion
+
+            #region 2
+            ///*2*/ var Result = CustomerList.Where(C => C .Orders.Count() > 0).ToList();               
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine($"{item}-------------- {item.Orders.Count()}");
+            //} 
+            #endregion
+
+            #region 3
+            ///*3*/    var Result = ProductList.GroupBy(p => p.Category).ToDictionary(g => g.Key, g => g.Count());
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine($"{item.Key}\t{item.Value}");
+            //} 
+            #endregion
+
+            #region 4
+            //int[] Arr = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+            //var Result = Arr.Length;
+            //Console.WriteLine(Result);
+            #endregion
+
+            #region 5
+
+            #endregion
+
+            #region 6
+
+            #endregion
+
+            #region 7
+
+            #endregion
+
+            #region 8
+
+            #endregion
+
+            #region 9
+            //var Result = ProductList.GroupBy(P => P.Category).Select(g => new
+            //{
+            //    Category = g.Key,
+            //    TotalUnitsInStock = g.Sum(p => p.UnitsInStock)
+            //}).ToList();            
+            #endregion
+
+            #region 10
+            //var Result = ProductList.GroupBy(P => P.Category).Select(g => new
+            //{
+            //    Category = g.Key,
+            //    CheapestPrice = g.Min(p => p.UnitPrice)
+            //}).ToList();
+            #endregion
+
+            #region 11
+            //var Result = ProductList.GroupBy(P => P.Category).Select(g =>
+            //{
+            //    var cheapestPrice = g.Min(p => p.UnitPrice);
+            //    var cheapestProducts = g.Where(p => p.UnitPrice == cheapestPrice).ToList();
+            //    return new
+            //    {
+            //        Category = g.Key,
+            //        CheapestPrice = cheapestPrice,
+            //        Products = cheapestProducts
+            //    };
+            //}).ToList();  
+            #endregion
+            #endregion
+
         }
     }
 }
