@@ -22,6 +22,15 @@ namespace LinQ_Session01
             //    Console.WriteLine(item);
             //}
             #endregion
+
+            #region  Element Operators
+            /*1*/ //var Result = ProductList.FirstOrDefault(P => P.UnitsInStock == 0);
+            /*2*/ //var Result = ProductList.FirstOrDefault(P => P.UnitPrice > 3000);
+            ///*3*/ int[] Arr = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+            //var Result = Arr.Where(N => N > 5)
+            //             .Skip(1).FirstOrDefault();
+            //Console.WriteLine(Result);
+            #endregion
         }
     }
 }
