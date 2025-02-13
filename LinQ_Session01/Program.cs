@@ -469,6 +469,45 @@ namespace LinQ_Session01
             //}
             #endregion
             #endregion
+
+            #region Grouping Operators
+            #region 1
+            //List<int> numbers = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
+            //var groupedNumbers = numbers.GroupBy(n => n % 5);
+            //foreach (var group in groupedNumbers)
+            //{
+            //    Console.WriteLine($"Numbers with remainder {group.Key} when divided by 5:");
+            //    foreach (var num in group)
+            //    {
+            //        Console.Write(num + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
+            #endregion
+
+            #region 2
+            //string[] words = File.ReadAllLines(@"C:\Users\hp\Downloads\dictionary_english.txt");
+            //var groupedWords = words.Where(w => !string.IsNullOrWhiteSpace(w)).GroupBy(w => w[0]);
+            //foreach (var group in groupedWords)
+            //{
+            //    Console.WriteLine($"Words starting with '{group.Key}':");
+            //    foreach (var word in group.Take(5)) 
+            //    {
+            //        Console.WriteLine("  " + word);
+            //    }
+            //    Console.WriteLine("=======");
+            //}
+            #endregion
+
+            #region 3
+            //string[] Arr = { "from", "salt", "earn", "last", "near", "form" };
+            //var groupedAnagrams = Arr.GroupBy(word => new string(word.OrderBy(c => c).ToArray()));
+            //foreach (var group in groupedAnagrams)
+            //{
+            //    Console.WriteLine($"Anagram Group: {string.Join(", ", group)}");
+            //}
+            #endregion
+            #endregion
         }
     }
 }
