@@ -5,6 +5,10 @@ using static LinQ_Session01.Data.Order;
 using static LinQ_Session01.Data.Product;
 using System.Linq;
 using LinQ_Session01.Data;
+using Microsoft.VisualBasic;
+using System.Buffers.Text;
+using System.Text.RegularExpressions;
+using System;
 namespace LinQ_Session01
 {
     internal class Program
@@ -142,7 +146,44 @@ namespace LinQ_Session01
             //    };
             //}).ToList();  
             #endregion
-            #endregion;
+
+            #region 12
+            //var mostExpensivePrices = ProductList.GroupBy(p => p.Category)
+            //    .Select(g => new
+            //    {
+            //         Category = g.Key,
+            //         MostExpensivePrice = g.Max(p => p.UnitPrice)
+            //    }).ToList();
+            //foreach (var item in mostExpensivePrices)
+            //{
+            //    Console.WriteLine($"Category: {item.Category}, Most Expensive Price: {item.MostExpensivePrice}");
+            //}
+            #endregion
+
+            #region 13
+            //var productsWithMostExpensivePrice = ProductList.GroupBy(p => p.Category)
+            //    .SelectMany(g => g.Where(p => p.UnitPrice == g.Max(p => p.UnitPrice))).ToList();
+            //foreach (var product in productsWithMostExpensivePrice)
+            //{
+            //    Console.WriteLine(product.ToString());
+            //}
+            #endregion
+
+            #region 14
+            //var averagePricesByCategory = ListGenerators.ProductList.GroupBy(p => p.Category)
+            //    .Select(g => new
+            //    {
+            //        Category = g.Key,
+            //        AveragePrice = g.Average(p => p.UnitPrice)
+            //    }).ToList();
+            //foreach (var item in averagePricesByCategory)
+            //{
+            //    Console.WriteLine($"Category: {item.Category}, Average Price: {item.AveragePrice}");
+            //}
+            #endregion
+            #endregion
+
         }
     }
 }
+
