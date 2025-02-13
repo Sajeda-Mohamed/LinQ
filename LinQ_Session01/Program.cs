@@ -64,19 +64,53 @@ namespace LinQ_Session01
             #endregion
 
             #region 5
+            //string[] words = File.ReadAllLines(@"C:\Users\hp\Downloads\dictionary_english.txt");
+
+            //if (words.Length == 0)
+            //{
+            //    Console.WriteLine("The dictionary file is empty.");
+            //    return;
+            //}
+            //int totalCharacters = words.Sum(word => word.Length);
+            //Console.WriteLine($"Total number of characters: {totalCharacters}");
 
             #endregion
 
             #region 6
+            //string[] words = File.ReadAllLines(@"C:\Users\hp\Downloads\dictionary_english.txt");
+
+            //if (words.Length == 0)
+            //{
+            //    Console.WriteLine("The dictionary file is empty.");
+            //    return;
+            //}
+            //int shortestWordLength = words.Min(word => word.Length);
+            //Console.WriteLine($"Length of the shortest word: {shortestWordLength}");
 
             #endregion
 
             #region 7
+            //string[] words = File.ReadAllLines(@"C:\Users\hp\Downloads\dictionary_english.txt");
 
+            //if (words.Length == 0)
+            //{
+            //    Console.WriteLine("The dictionary file is empty.");
+            //    return;
+            //}
+            //int longestWordLength = words.Max(word => word.Length);
+            //Console.WriteLine($"Length of the longest word: {longestWordLength}");
             #endregion
 
             #region 8
+            //string[] words = File.ReadAllLines(@"C:\Users\hp\Downloads\dictionary_english.txt");
 
+            //if (words.Length == 0)
+            //{
+            //    Console.WriteLine("The dictionary file is empty.");
+            //    return;
+            //}
+            //double averageWordLength = words.Average(word => word.Length);
+            //Console.WriteLine($"Average length of words: {averageWordLength}");
             #endregion
 
             #region 9
@@ -108,8 +142,7 @@ namespace LinQ_Session01
             //    };
             //}).ToList();  
             #endregion
-            #endregion
-
+            #endregion;
         }
     }
 }
