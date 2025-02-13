@@ -183,6 +183,80 @@ namespace LinQ_Session01
             #endregion
             #endregion
 
+            #region  Ordering Operators
+            #region 1
+            //var sortedByName = ProductList.OrderBy(p => p.ProductName).ToList();
+            //foreach (var product in sortedByName)
+            //{
+            //    Console.WriteLine(product.ProductName);
+            //}
+            #endregion
+
+            #region 2
+            //string[] arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+            //var sortedArr = arr.OrderBy(word => word, StringComparer.OrdinalIgnoreCase).ToArray();
+            //foreach (var word in sortedArr)
+            //{
+            //    Console.WriteLine(word);
+            //}
+            #endregion
+
+            #region 3
+            //var sortedByStock = ProductList.OrderByDescending(p => p.UnitsInStock).ToList();
+            //foreach (var product in sortedByStock)
+            //{
+            //    Console.WriteLine($"Product: {product.ProductName}, Stock: {product.UnitsInStock}");
+            //}
+            #endregion
+
+            #region 4
+            //string[] arr = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
+            //var sortedByLengthThenAlphabet = arr.OrderBy(word => word.Length).ThenBy(word => word, 
+            //    StringComparer.OrdinalIgnoreCase).ToArray();
+            //foreach (var word in sortedByLengthThenAlphabet)
+            //{
+            //    Console.WriteLine(word);
+            //}
+            #endregion
+
+            #region 5
+            //string[] arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+            //var sortedByLengthThenCaseInsensitive = arr.OrderBy(word => word.Length)
+            //    .ThenBy(word => word, StringComparer.OrdinalIgnoreCase).ToArray();
+            //foreach (var word in sortedByLengthThenCaseInsensitive)
+            //{
+            //    Console.WriteLine(word);
+            //}
+            #endregion
+
+            #region 6
+            //var sortedByCategoryThenPrice = ListGenerators.ProductList.OrderBy(p => p.Category)
+            //            .ThenByDescending(p => p.UnitPrice).ToList();
+            //foreach (var product in sortedByCategoryThenPrice)
+            //{
+            //    Console.WriteLine($"Category: {product.Category}, Price: {product.UnitPrice}");
+            //}
+            #endregion
+
+            #region 7
+            //string[] arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+            //var sortedByLengthThenDescending = arr.OrderBy(word => word.Length).ThenByDescending
+            //    (word => word, StringComparer.OrdinalIgnoreCase).ToArray();
+            //foreach (var word in sortedByLengthThenDescending)
+            //{
+            //    Console.WriteLine(word);
+            //}
+            #endregion
+
+            #region 8
+            //string[] arr = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
+            //var Result = arr.Where(word => word.Length > 1 && word[1] == 'i').Reverse().ToList();
+            //foreach (var word in Result)
+            //{
+            //    Console.WriteLine(word);
+            //}
+            #endregion
+            #endregion
         }
     }
 }
