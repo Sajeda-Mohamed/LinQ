@@ -9,6 +9,10 @@ using Microsoft.VisualBasic;
 using System.Buffers.Text;
 using System.Text.RegularExpressions;
 using System;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Diagnostics;
+using System.Reflection;
+using System.Xml.Linq;
 namespace LinQ_Session01
 {
     internal class Program
@@ -254,6 +258,74 @@ namespace LinQ_Session01
             //foreach (var word in Result)
             //{
             //    Console.WriteLine(word);
+            //}
+            #endregion
+            #endregion
+
+            #region Transformation Operators
+            #region 1
+            //var Result = ProductList.Select(p => p.ProductName).ToList();
+            //foreach (var name in Result)
+            //{
+            //    Console.WriteLine(name);
+            //}
+            #endregion
+
+            #region 2
+            //string[] words = { "aPPLE", "BlUeBeRrY", "cHeRry" };
+            //var transformedWords = words.Select(word => new { Upper = word.ToUpper(), Lower 
+            //    = word.ToLower() }).ToList();
+            //foreach (var word in transformedWords)
+            //{
+            //    Console.WriteLine($"Upper: {word.Upper}, Lower: {word.Lower}");
+            //}           
+            #endregion
+
+            #region 3
+            //var productDetails = ProductList.Select(p => new { p.ProductName, Price = p.UnitPrice, 
+            //    p.Category }).ToList();
+            //foreach (var product in productDetails)
+            //{
+            //    Console.WriteLine($"Name: {product.ProductName}, Price: {product.Price}, Category: {product.Category}");
+            //}
+            #endregion
+
+            #region 4
+            //int[] arr = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+            //var matchingIndexes = arr.Select((value, index) => new { Value = value, Index = index })
+            //    .Where(item => item.Value == item.Index).ToList();
+            //foreach (var item in matchingIndexes)
+            //{
+            //    Console.WriteLine($"Value {item.Value} matches its index {item.Index}");
+            //}
+            #endregion
+
+            #region 5
+            //int[] numbersA = { 0, 2, 4, 5, 6, 8, 9 };
+            //int[] numbersB = { 1, 3, 5, 7, 8 };
+            //var pairs = from a in numbersA
+            //            from b in numbersB
+            //            where a < b
+            //            select new { A = a, B = b };
+            //foreach (var pair in pairs)
+            //{
+            //    Console.WriteLine($"({pair.A}, {pair.B})");
+            //}
+            #endregion
+
+            #region 6
+            //var smallOrders = CustomerList.SelectMany(c => c.Orders).Where(o => o.Total < 500.00M);
+            //foreach (var order in smallOrders)
+            //{
+            //    Console.WriteLine($"Order ID: {order.OrderID}, Total: {order.Total}");
+            //}
+            #endregion
+
+            #region 7
+            //var recentOrders = CustomerList.SelectMany(c => c.Orders).Where(o => o.OrderDate.Year >= 1998);
+            //foreach (var order in recentOrders)
+            //{
+            //    Console.WriteLine($"Order ID: {order.OrderID}, Date: {order.OrderDate}, Total: {order.Total}");
             //}
             #endregion
             #endregion
