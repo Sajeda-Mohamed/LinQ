@@ -382,6 +382,52 @@ namespace LinQ_Session01
             //}
             #endregion
             #endregion
+
+            #region Quantifiers
+            #region 1
+            //string[] words = File.ReadAllLines(@"C:\Users\hp\Downloads\dictionary_english.txt");
+            //var wordsContainingEi = words.Where(word => word.Contains("ei")).ToList();
+            //if (wordsContainingEi.Any())
+            //{
+            //    Console.WriteLine("Words containing 'ei' found:");
+            //    foreach (var word in wordsContainingEi)
+            //    {
+            //        Console.WriteLine(word);
+            //    }
+            //}
+            //else
+            //{
+            //    Console.WriteLine("No words contain 'ei'.");
+            //}
+            #endregion
+
+            #region 2
+            //var groupedProducts = ProductList.Where(p => p.UnitsInStock == 0).Select(p => p.Category)
+            //               .Distinct().Join(ProductList,cat => cat, prod => prod.Category,(cat, prod)
+            //               => new { Category = cat, Product = prod }).GroupBy(x => x.Category);
+            //foreach (var group in groupedProducts)
+            //{
+            //    Console.WriteLine($"Category: {group.Key}");
+            //    foreach (var product in group)
+            //    {
+            //        Console.WriteLine($"  - {product.Product.ProductName} (Stock: {product.Product.UnitsInStock})");
+            //    }
+            //}
+            #endregion
+
+            #region 3
+            //var fullyStockedCategories = ProductList.GroupBy(p => p.Category).Where
+            //    (g => g.All(p => p.UnitsInStock > 0)).ToList();
+            //foreach (var category in fullyStockedCategories)
+            //{
+            //    Console.WriteLine($"Category: {category.Key}");
+            //    foreach (var product in category)
+            //    {
+            //        Console.WriteLine($"  - {product.ProductName} (Stock: {product.UnitsInStock})");
+            //    }
+            //}
+            #endregion
+            #endregion
         }
     }
 }
