@@ -13,6 +13,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.Diagnostics;
 using System.Reflection;
 using System.Xml.Linq;
+using System.Numerics;
 namespace LinQ_Session01
 {
     internal class Program
@@ -425,6 +426,46 @@ namespace LinQ_Session01
             //    {
             //        Console.WriteLine($"  - {product.ProductName} (Stock: {product.UnitsInStock})");
             //    }
+            //}
+            #endregion
+            #endregion
+
+            #region Partitioning Operators
+            #region 1
+            //var firstThreeOrders = CustomerList.Where(c => c.Region == "WA").SelectMany
+            //    (c => c.Orders).OrderBy(o => o.OrderDate).Take(3);                     
+            //foreach (var order in firstThreeOrders)
+            //{
+            //    Console.WriteLine(order);
+            //}
+            #endregion
+
+            #region 2
+            //var remainingOrders = CustomerList.Where(c => c.Region == "WA").SelectMany(c => c.Orders)
+            //      .OrderBy(o => o.OrderDate).Skip(2);                  
+            //foreach (var order in remainingOrders)
+            //{
+            //    Console.WriteLine(order);
+            //}
+            #endregion
+
+            #region 3
+            //int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+
+            //var sequence = numbers.TakeWhile((num, index) => num >= index);
+
+            //foreach (var num in sequence)
+            //{
+            //    Console.WriteLine(num);
+            //}
+            #endregion
+
+            #region 4
+            //int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+            //var sequenceFromDivisibleBy3 = numbers.SkipWhile(num => num % 3 != 0);
+            //foreach (var num in sequenceFromDivisibleBy3)
+            //{
+            //    Console.WriteLine(num);
             //}
             #endregion
             #endregion
