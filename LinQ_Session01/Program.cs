@@ -329,6 +329,59 @@ namespace LinQ_Session01
             //}
             #endregion
             #endregion
+
+            #region Set Operators
+            #region 1
+            //var uniqueCategories = ProductList.Select(p => p.Category).Distinct();
+            //foreach (var category in uniqueCategories)
+            //{
+            //    Console.WriteLine(category);
+            //}
+            #endregion
+
+            #region 2
+            //var productFirstLetters = ProductList.Select(p => p.ProductName[0]);
+            //var customerFirstLetters = CustomerList.Select(c => c.CustomerName[0]);
+            //var uniqueFirstLetters = productFirstLetters.Union(customerFirstLetters);
+
+            //foreach (var letter in uniqueFirstLetters)
+            //{
+            //    Console.WriteLine(letter);
+            //}
+            #endregion
+
+            #region 3
+            //var productFirstLetters = ProductList.Select(p => p.ProductName[0]);
+            //var customerFirstLetters = CustomerList.Select(c => c.CustomerName[0]);
+            //var commonFirstLetters = productFirstLetters.Intersect(customerFirstLetters);
+            //foreach (var letter in commonFirstLetters)
+            //{
+            //    Console.WriteLine(letter);
+            //}
+            #endregion
+
+            #region 4
+            //var productFirstLetters = ProductList.Select(p => p.ProductName[0]);
+            //var customerFirstLetters = CustomerList.Select(c => c.CustomerName[0]);
+            //var commonFirstLetters = productFirstLetters.Except(customerFirstLetters);
+            //foreach (var letter in commonFirstLetters)
+            //{
+            //    Console.WriteLine(letter);
+            //}
+            #endregion
+
+            #region 5
+            //var productLastThreeChars = ProductList.Select(p => p.ProductName.Length >= 3 ? 
+            //         p.ProductName[^3..]: p.ProductName);
+            //var customerLastThreeChars = CustomerList.Select(c => c.CustomerName.Length >= 3 ?
+            //         c.CustomerName[^3..]: c.CustomerName);
+            //var lastThreeCharsSequence = productLastThreeChars.Concat(customerLastThreeChars);
+            //foreach (var lastThree in lastThreeCharsSequence)
+            //{
+            //    Console.WriteLine(lastThree);
+            //}
+            #endregion
+            #endregion
         }
     }
 }
